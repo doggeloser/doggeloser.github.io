@@ -11,3 +11,9 @@ a{color:var(--sign)}
 .mark{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:10px;background:var(--ticket);color:#12203a;font-weight:900;margin-right:10px;vertical-align:middle}
 .card{border:1px solid var(--line);border-radius:12px;padding:18px;margin:16px 0}
 footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.9rem}
+.app{display:flex;gap:16px;align-items:flex-start}
+.app img{width:72px;height:72px;border-radius:16px;flex:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.lang{float:right;font-size:.9rem}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:8px 0}
+dt{color:var(--muted)}dd{margin:0}
