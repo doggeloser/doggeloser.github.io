@@ -9,12 +9,13 @@
 <h2>Vilka uppgifter vi behandlar och varför</h2>
 <ul>
 <li><strong>Konto.</strong> Ett användar-id, och din e-postadress om du sparar kontot. Syfte: att ge dig tjänsten. Grund: avtal.</li>
-<li><strong>Dina bilar.</strong> Registreringsnummer och vald stadsdel. Syfte: påminnelser, grannetips om du slagit på dem och topplistor per stadsdel. Grund: avtal.</li>
-<li><strong>Position vid parkering.</strong> Var bilen står när du parkerar. Med Plus märker appen själv när du slutat köra. Vi sparar platsen för parkeringen, inte hur du rör dig. Syfte: att hitta reglerna där bilen står. Grund: avtal.</li>
-<li><strong>Påminnelser.</strong> Tider och regler för din parkering och en adress för pushnotiser. Grund: avtal.</li>
-<li><strong>När du tipsar en granne.</strong> Din position används bara för att hitta regeln och sparas inte. Bilden stannar i din telefon. Har ägaren Lisa och har slagit på grannetips sparar vi registreringsnumret, regeln och tiden för att kunna visa tipset för ägaren. Har ägaren inte Lisa sparar vi inte registreringsnumret, bara en krypterad kontrollsumma som hindrar att samma bil tipsas två gånger samma dag. Grund: berättigat intresse av att varna ägaren och förhindra missbruk.</li>
+<li><strong>Dina bilar.</strong> Registreringsnummer, ett smeknamn om du väljer att sätta ett, och vald stadsdel. Syfte: påminnelser, grannetips om du slagit på dem och topplistor. Grund: avtal.</li>
+<li><strong>Position vid parkering.</strong> Var bilen står när du parkerar. Med Plus märker appen själv när du slutat köra. Vi sparar platsen för parkeringen, inte hur du rör dig. För att hitta reglerna skickar vi platsen, utan namn, konto eller registreringsnummer, till Stockholms stads tjänst för trafikföreskrifter. Syfte: att hitta reglerna där bilen står. Grund: avtal.</li>
+<li><strong>Påminnelser.</strong> Tider och regler för din parkering och en adress för pushnotiser. Notiserna visar bilens smeknamn eller "Din bil", aldrig registreringsnumret. De skickas via Expo, Apple och Google. Grund: avtal.</li>
+<li><strong>När du tipsar en granne.</strong> Din position används bara för att hitta regeln och sparas inte. Bilden stannar i din telefon. Har ägaren Lisa och har slagit på grannetips sparar vi registreringsnumret, regeln och tiden för att kunna visa tipset för ägaren. Har ägaren inte Lisa sparar vi inte registreringsnumret, bara en krypterad kontrollsumma som hindrar att samma bil tipsas två gånger samma dag. Grund: avtal med dig som tipsar, och berättigat intresse av att varna ägaren och förhindra missbruk.</li>
 <li><strong>När någon tipsar dig.</strong> Du får en notis om din bil bara när din app har registrerat en parkering för bilen nära platsen för tipset. Matchningen sker i vår server. Du ser aldrig vem som tipsade. Väljer du att tacka får den som tipsade veta att tipset nådde fram, och beloppet om du väljer att visa det. Grund: avtal och ditt eget val.</li>
-<li><strong>Läsa en skylt.</strong> Innan första bilden frågar vi om du godkänner att bilden skickas till vår AI-leverantör Anthropic i USA för tolkning. Bilden sparas inte efter svaret och används inte för att träna AI. Platsdata i bildfilen tas bort innan den skickas. Grund: samtycke, som du kan återkalla genom att sluta använda funktionen.</li>
+<li><strong>Läsa en skylt.</strong> Innan första bilden frågar vi om du godkänner att bilden skickas till vår AI-leverantör Anthropic i USA för tolkning. Lisa sparar inte bilden. Anthropic använder den inte för att träna AI. Platsdata i bildfilen tas bort innan den skickas. Grund: samtycke, som du kan återkalla genom att sluta använda funktionen.</li>
+<li><strong>Topplistor.</strong> Ditt visningsnamn, "Granne" om du inte väljer något annat, och dina poäng visas för andra användare i din stadsdel, din stad och ditt land. Topplistan uppdateras en gång per dygn. Grund: avtal.</li>
 <li><strong>Köp.</strong> Apple eller Google hanterar betalningen. Vi får bara veta om du har Plus och till när.</li>
 <li><strong>Kod från partner.</strong> Om du skriver in en kod sparar vi den på ditt konto för att kunna ersätta partnern. Grund: berättigat intresse.</li>
 </ul>
@@ -25,18 +26,20 @@
 <h2>Hur länge vi sparar uppgifterna</h2>
 <ul>
 <li>Avslutade parkeringar och påminnelser: 90 dagar.</li>
-<li>Tips: 12 månader.</li>
-<li>Konto, bilar och poäng: tills du raderar kontot.</li>
+<li>Tips och kontrollsummor: 12 månader.</li>
+<li>Konto, bilar och poäng: tills du raderar kontot. Konton som inte används raderas inte automatiskt.</li>
 </ul>
 
 <h2>Vilka som hjälper oss</h2>
 <ul>
 <li>Supabase (lagring och servrar i Frankfurt, EU)</li>
-<li>Expo (pushnotiser)</li>
-<li>RevenueCat (håller reda på abonnemang)</li>
+<li>Expo (pushnotiser, USA)</li>
+<li>RevenueCat (håller reda på abonnemang, USA)</li>
 <li>Anthropic (tolkning av skyltbilder, USA, med EU:s standardavtalsklausuler)</li>
-<li>Apple och Google (appbutiker och betalning)</li>
+<li>Apple och Google (appbutiker, betalning och pushnotiser)</li>
+<li>Stockholms stad (får platsen för en parkering eller ett tips, utan uppgift om vem du är, för att svara med reglerna)</li>
 </ul>
+<p>När en leverantör behandlar uppgifter utanför EU sker det med EU:s standardavtalsklausuler eller EU-US Data Privacy Framework.</p>
 <p>Vi säljer aldrig dina uppgifter och använder dem inte för reklam.</p>
 
 <h2>Dina rättigheter</h2>
